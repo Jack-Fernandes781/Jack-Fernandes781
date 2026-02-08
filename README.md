@@ -18,14 +18,14 @@
 
 ## About Me
 
-I build ML systems that solve operational problems — predicting equipment failures, optimizing maintenance schedules, and pulling insights out of data that others overlook.
+I build ML systems that solve operational problems — predicting equipment failures, forecasting hospital resource needs, and pulling insights out of data that others overlook.
 
 My focus areas:
 
-- **Predictive Analytics** — forecasting failures before they cost money
+- **Predictive Analytics** — forecasting failures and outcomes before they cost money
 - **Classification Systems** — multi-class models with real business impact
 - **Data Storytelling** — making complex findings accessible to stakeholders
-- **Pipeline Architecture** — from raw ingestion to deployed API
+- **Healthcare & Operations Analytics** — turning large datasets into actionable decisions
 
 <br clear="right"/>
 
@@ -90,22 +90,33 @@ Estimated Savings:
 
 <div align="center">
 
-<a href="https://github.com/Jack-Fernandes781/Commercial-Truck-Maintenance-">
-<img src="https://img.shields.io/badge/COMMERCIAL%20TRUCK%20MAINTENANCE-4ECDC4?style=for-the-badge&logoColor=white" alt="Truck Project"/>
+<a href="https://github.com/Jack-Fernandes781/hospital-los-prediction">
+<img src="https://img.shields.io/badge/HOSPITAL%20LOS%20PREDICTION-4ECDC4?style=for-the-badge&logoColor=white" alt="Hospital LOS Project"/>
 </a>
 
 </div>
 
 <details>
-<summary><b>Maintenance pattern analysis for commercial fleets — click to expand</b></summary>
+<summary><b>Predicts hospital stay duration from 500K patient records — click to expand</b></summary>
 <br>
 
-Data-driven analysis of commercial trucking maintenance operations. Identifies failure patterns, schedule optimization opportunities, and cost drivers across fleet operations.
+Classification pipeline that predicts hospital length of stay categories (Short / Standard / Extended / Long) to support capacity planning and resource allocation.
 
 | What | Detail |
 |------|--------|
-| **Focus** | Maintenance scheduling & cost optimization |
-| **Stack** | Python, pandas, data visualization |
+| **Best Model** | Gradient Boosting — 92.8% accuracy |
+| **Dataset** | 500,000 patient admission records, 44 engineered features |
+| **Stack** | scikit-learn, SciPy, pandas, Matplotlib, Seaborn |
+| **Analysis** | Chi-square, ANOVA, Cramer's V, 16 visualizations |
+
+Statistical analysis identified **department, gender, age, and ward** as the strongest predictors of stay duration (Cramer's V > 0.48). Three classifiers compared with full confusion matrices and feature importance analysis.
+
+```
+Model Comparison:
+  Random Forest:       90.5%
+  Gradient Boosting:   92.8%
+  Logistic Regression: 83.5%
+```
 
 </details>
 
